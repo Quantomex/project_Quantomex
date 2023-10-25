@@ -1,0 +1,21 @@
+<!-- views/setOTP.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Admin OTP</title>
+</head>
+<body>
+  <h1>Set Admin OTP</h1>
+  <form action="/setOTP" method="post">
+    <label for="otp">Admin OTP:</label>
+    <input type="text" id="otp" name="otp" required>
+    <button type="submit">Set OTP</button>
+  </form>
+  <% for (let c of pass) { %>
+    <h6 class="text-truncate mb-3">
+      <%= c.otp %>
+    </h6>
+    <% } %>
+</body>
+</html>

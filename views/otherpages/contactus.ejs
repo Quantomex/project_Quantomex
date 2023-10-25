@@ -1,0 +1,64 @@
+
+<%- include('../partials/head.ejs') %>
+<title>Contact us</title>
+<%- include('../partials/body.ejs') %>
+
+<div class="navbar23">
+
+<div class="prelative">
+    <%- include('../partials/navbar.ejs', { currentPage: 'contact' }) %>
+
+
+</div>
+
+
+<div class="topimage">
+ 
+ 
+    <div class="column-2">
+       <p> Contact </p>
+    </div>
+    <div class="column-2">
+        <p class="hometocontact"> Home > Contact </p>
+    </div>
+   </div>
+   
+</div>
+   <div class="contactrow">
+    <div class="contactcolumn">
+        <p class="contactheading">Let's talk</p>
+        <form action="">
+            <p class="input-labels">Your name</p>
+            <input type="text" name="name" placeholder="Enter Your name" class="form-input-control">
+            <p class="input-labels">Email</p>
+            <input type="text" name="name" placeholder="Enter Your email" class="form-input-control">
+            <p class="input-labels">Phone</p>
+            <input type="phone" name="name" placeholder="Enter Your number" class="form-input-control">
+            <p class="input-labels">Your message</p>
+            <textarea type="text" name="name" placeholder="Type Your message" class="form-textarea-control"  id="" cols="30" rows="10"></textarea> <br>
+            <button type="submit" class="form-submit-btn">Submit </button>
+        </form>
+    </div>
+    <div class="contactcolumn">
+        <img class="annoucment" src="/images/annoucment.png" alt="">
+        <div class="annount-div">
+            <i class="fas fa-phone size"></i>
+           <p class="annoucment-text"> +1(416)902-0308 </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-envelope size"></i>
+           <p class="annoucment-text"> accounting@ask.associates </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-map-marker-alt size"></i>
+           <p class="annoucment-text">ASK Associates 720 Sheppard Ave - Unit # 3
+            Pickering ON, L1V 1G5 </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-clock size"></i>
+           <p class="annoucment-text"> Mon - Fri: 9am - 6pm </p>
+        </div>
+    </div>
+   </div>
+   <%- include('../partials/footer.ejs') %>
+   
